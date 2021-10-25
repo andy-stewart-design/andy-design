@@ -5,6 +5,15 @@
 	import Image from '$lib/media/Image.svelte';
 </script>
 
+<svelte:head>
+	<title>About | Andy Stewart</title>
+	<meta
+		name="description"
+		content="I created this website to be visible on the web as a developer and to share the
+        knowledge that I gathered over the years."
+	/>
+</svelte:head>
+
 <PgTransPrimary>
 	<HeroProject src="/FPO-05.jpeg" />
 	<IntersectionOberver>

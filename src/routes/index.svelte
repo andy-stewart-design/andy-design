@@ -5,6 +5,14 @@
 	import Image from '$lib/media/Image.svelte';
 </script>
 
+<svelte:head>
+	<title>The Design Portfolio of Andy Stewart</title>
+	<meta
+		name="description"
+		content="Personal website and blog written from scratch with SvelteKit and TailwindCSS."
+	/>
+</svelte:head>
+
 <PgTransPrimary>
 	<HeroProject src="/FPO-01.jpeg" />
 	<IntersectionOberver>
