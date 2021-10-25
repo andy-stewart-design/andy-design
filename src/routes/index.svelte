@@ -1,16 +1,14 @@
 <script>
 	import PgTransPrimary from '$lib/pageTransitions/PgTransPrimary.svelte';
 	import IntersectionOberver from '$lib/IntersectionOberver.svelte';
+	import HeroProject from '$lib/modules/HeroProject.svelte';
 	import Image from '$lib/media/Image.svelte';
 </script>
 
 <PgTransPrimary>
+	<HeroProject src="/FPO-01.jpeg" />
 	<IntersectionOberver>
 		<main>
-			<div class="w-screen h-screen overflow-hidden">
-				<Image src="/FPO-01.jpeg" alt="ksjndcj" />
-			</div>
-
 			<div class="p-8">
 				<div class="my-4">
 					<Image dataSrc="/FPO-02.jpeg" isLazy={true} />
