@@ -1,0 +1,15 @@
+<script>
+	export let src = 'https://via.placeholder.com/1920x1080';
+	export let dataSrc = '';
+	export let isLazy = false;
+	export let alt = "andy's image";
+</script>
+
+<img
+	class:lazy-io={isLazy === true}
+	class:opacity-0={isLazy === true}
+	class="transition-opacity duration-1000"
+	{src}
+	data-src={dataSrc}
+	{alt}
+/>
