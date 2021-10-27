@@ -3,7 +3,7 @@
 	let main;
 
 	onMount(() => {
-		const lazyImages = main.querySelectorAll('.lazy-io');
+		const lazyImages = main.querySelectorAll('.lazy-img');
 
 		let lazyImageObserver = new IntersectionObserver(function (entries, observer) {
 			entries.forEach((entry) => {

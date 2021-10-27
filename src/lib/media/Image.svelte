@@ -6,7 +6,7 @@
 </script>
 
 <img
-	class:lazy-io={isLazy === true}
+	class:lazy-img={isLazy === true}
 	class:opacity-0={isLazy === true}
 	class="transition-opacity duration-1000"
 	{src}

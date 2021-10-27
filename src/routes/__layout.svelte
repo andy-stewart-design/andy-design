@@ -15,7 +15,7 @@
 {#if isLoaded}
 	<div
 		transition:fade={{ duration: 1000, delay: 500 }}
-		class="w-screen h-screen absolute top-0 left-0 bg-white"
+		class="w-screen h-screen fixed top-0 left-0 bg-white"
 	/>
 {/if}
 
