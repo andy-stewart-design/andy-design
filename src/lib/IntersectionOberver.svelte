@@ -1,27 +1,47 @@
 <script>
 	import { onMount } from 'svelte';
 	let main;
+	let isPaused = false;
+	let offX = '0px';
+	let offY = '-200px';
 
 	onMount(() => {
-		const lazyImages = main.querySelectorAll('.lazy-img');
+		const lazyMedia = main.querySelectorAll('.lazy-media');
 
-		let lazyImageObserver = new IntersectionObserver(function (entries, observer) {
-			entries.forEach((entry) => {
-				if (entry.isIntersecting) {
-					let lazyImage = entry.target;
-					lazyImage.src = lazyImage.dataset.src;
-					lazyImage.classList.add('transition-fade');
-					lazyImageObserver.unobserve(lazyImage);
-				}
-			});
-		});
-		/** Now observe all the non-loaded images using the observer we have setup above **/
-		lazyImages.forEach(function (lazyImage) {
-			lazyImageObserver.observe(lazyImage);
+		let lazyMediaObserver = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.target.nodeName === 'IMG') {
+						console.log('Image: ' + entry.isIntersecting);
+						if (entry.isIntersecting) {
+							let lazyImage = entry.target;
+							lazyImage.src = lazyImage.dataset.src;
+							lazyImage.classList.add('transition-fade');
+							lazyMediaObserver.unobserve(lazyImage);
+						}
+					}
+					if (entry.target.nodeName === 'VIDEO') {
+						console.log('Video: ' + entry.isIntersecting);
+						let video = entry.target;
+						if (entry.isIntersecting && isPaused) {
+							video.play();
+							isPaused = false;
+						} else if (!isPaused) {
+							video.pause();
+							isPaused = true;
+						}
+					}
+				});
+			},
+			{ rootMargin: `${offY} ${offX} ${offY} ${offX}` }
+		);
+
+		lazyMedia.forEach(function (lazyMedia) {
+			lazyMediaObserver.observe(lazyMedia);
 		});
 
 		return () => {
-			lazyImageObserver.disconnect();
+			lazyMediaObserver.disconnect();
 		};
 	});
 </script>
