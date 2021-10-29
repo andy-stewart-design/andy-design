@@ -14,8 +14,8 @@
 	/>
 </svelte:head>
 
-<PgTransPrimary>
-	<HeroProject src="/FPO-01.jpeg" />
+<PgTransPrimary let:isLoaded>
+	<HeroProject {isLoaded} src="/FPO-01.jpeg" />
 	<IntersectionOberver>
 		<main>
 			<div class="p-8">
