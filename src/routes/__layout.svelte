@@ -9,6 +9,7 @@
 
 	onMount(() => {
 		isLoaded = false;
+		console.log('Hey there, code peeker ;)');
 	});
 </script>
 

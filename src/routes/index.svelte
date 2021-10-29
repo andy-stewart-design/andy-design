@@ -20,7 +20,9 @@
 		<main>
 			<div class="p-8">
 				<div class="my-4">
-					<Video />
+					<Video
+						src="https://player.vimeo.com/external/427897966.hd.mp4?s=ea4a73abbc089ba6f0ad5d4757df2380f8a39675&profile_id=175"
+					/>
 				</div>
 
 				<div class="my-4">

@@ -12,7 +12,7 @@
 			(entries) => {
 				entries.forEach((entry) => {
 					if (entry.target.nodeName === 'IMG') {
-						console.log('Image: ' + entry.isIntersecting);
+						// console.log('Image: ' + entry.isIntersecting);
 						if (entry.isIntersecting) {
 							let lazyImage = entry.target;
 							lazyImage.src = lazyImage.dataset.src;
@@ -21,7 +21,7 @@
 						}
 					}
 					if (entry.target.nodeName === 'VIDEO') {
-						console.log('Video: ' + entry.isIntersecting);
+						// console.log('Video: ' + entry.isIntersecting);
 						let video = entry.target;
 						if (entry.isIntersecting && isPaused) {
 							video.play();
