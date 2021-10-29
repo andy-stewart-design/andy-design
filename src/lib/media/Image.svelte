@@ -8,7 +8,7 @@
 <img
 	class:lazy-media={isLazy === true}
 	class:opacity-0={isLazy === true}
-	class="transition-opacity duration-1000"
+	class="transition-opacity duration-1000 delay-100"
 	{src}
 	data-src={dataSrc}
 	{alt}

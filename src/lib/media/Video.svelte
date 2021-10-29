@@ -1,9 +1,14 @@
 <script>
+	import { onMount } from 'svelte';
 	export let src;
 	export let autoplay = 'true';
 	export let loop = 'true';
 	export let muted = 'true';
 	let video;
+
+	onMount(() => {
+		video.src = video.dataset.src;
+	});
 </script>
 
 <div class="w-full">
@@ -13,7 +18,8 @@
 			{autoplay}
 			{loop}
 			{muted}
-			{src}
+			src=""
+			data-src={src}
 			bind:this={video}
 			on:click={video.play()}
 		>

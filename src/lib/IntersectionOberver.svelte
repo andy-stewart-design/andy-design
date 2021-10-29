@@ -3,7 +3,7 @@
 	let main;
 	let isPaused = false;
 	let offX = '0px';
-	let offY = '-200px';
+	let offY = '0px';
 
 	onMount(() => {
 		const lazyMedia = main.querySelectorAll('.lazy-media');
@@ -14,10 +14,10 @@
 					if (entry.target.nodeName === 'IMG') {
 						// console.log('Image: ' + entry.isIntersecting);
 						if (entry.isIntersecting) {
-							let lazyImage = entry.target;
-							lazyImage.src = lazyImage.dataset.src;
-							lazyImage.classList.add('transition-fade');
-							lazyMediaObserver.unobserve(lazyImage);
+							let image = entry.target;
+							image.src = image.dataset.src;
+							image.classList.add('transition-fade');
+							lazyMediaObserver.unobserve(image);
 						}
 					}
 					if (entry.target.nodeName === 'VIDEO') {
