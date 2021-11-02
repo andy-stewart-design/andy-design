@@ -17,7 +17,7 @@
 <PgTransPrimary let:isLoaded>
 	<HeroProject {isLoaded} src="/FPO-05.jpeg" />
 	<IntersectionOberver>
-		<main>
+		<main class="bg-gray-200">
 			<div class="p-8">
 				<div class="my-4">
 					<Image dataSrc="/FPO-04.jpeg" isLazy={true} />

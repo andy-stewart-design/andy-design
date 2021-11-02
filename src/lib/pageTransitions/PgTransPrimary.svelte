@@ -4,13 +4,12 @@
 	export let isLoaded = false;
 	onMount(() => {
 		isLoaded = true;
-		console.log(isLoaded);
 		return () => {
 			isLoaded = false;
 		};
 	});
 </script>
 
-<div in:fade={{ duration: 400, delay: 600 }} out:fade={{ duration: 400 }}>
+<div in:fade={{ duration: 800, delay: 1000 }} out:fade={{ duration: 800 }}>
 	<slot {isLoaded} />
 </div>

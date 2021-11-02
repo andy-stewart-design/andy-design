@@ -15,11 +15,13 @@
 
 {#if isLoaded}
 	<div
-		transition:fade={{ duration: 1000, delay: 500 }}
-		class="w-screen h-screen fixed top-0 left-0 bg-white"
+		transition:fade={{ duration: 800, delay: 1000 }}
+		class="w-screen h-screen fixed top-0 left-0 bg-black z-50"
 	/>
 {/if}
 
 <Nav activeLink={$page.path} />
 
-<slot />
+<div class="bg-black">
+	<slot />
+</div>
