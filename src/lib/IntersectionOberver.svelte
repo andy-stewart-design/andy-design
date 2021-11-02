@@ -16,7 +16,12 @@
 						if (entry.isIntersecting) {
 							let image = entry.target;
 							image.src = image.dataset.src;
-							image.classList.add('transition-fade');
+							setTimeout(() => {
+								if (image.complete) {
+									console.log('image complete', image);
+									image.classList.add('transition-fade');
+								}
+							}, 1000);
 							lazyMediaObserver.unobserve(image);
 						}
 					}

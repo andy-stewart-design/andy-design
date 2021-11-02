@@ -2,6 +2,7 @@
 	import PgTransPrimary from '$lib/pageTransitions/PgTransPrimary.svelte';
 	import IntersectionOberver from '$lib/IntersectionOberver.svelte';
 	import HeroProject from '$lib/modules/HeroProject.svelte';
+	import Video from '$lib/media/Video.svelte';
 	import Image from '$lib/media/Image.svelte';
 </script>
 
@@ -17,14 +18,26 @@
 <PgTransPrimary let:isLoaded>
 	<HeroProject {isLoaded} src="/FPO-05.jpeg" />
 	<IntersectionOberver>
-		<main class="bg-gray-200">
+		<main class="bg-white">
 			<div class="p-8">
+				<div class="my-4">
+					<Video
+						src="https://player.vimeo.com/external/641529594.hd.mp4?s=098261326121d8b78a2e1ed27042eead40934e93&profile_id=175"
+					/>
+				</div>
+
 				<div class="my-4">
 					<Image dataSrc="/FPO-04.jpeg" isLazy={true} />
 				</div>
 
 				<div class="my-4">
 					<Image dataSrc="/FPO-03.jpeg" isLazy={true} />
+				</div>
+
+				<div class="my-4">
+					<Video
+						src="https://player.vimeo.com/external/641535658.hd.mp4?s=405546a4f2fe0970c4b4c6f421d7282ee9d2a6dd&profile_id=175"
+					/>
 				</div>
 
 				<div class="my-4">
