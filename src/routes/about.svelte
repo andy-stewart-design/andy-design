@@ -30,18 +30,40 @@
 					<Image dataSrc="/FPO-04.jpeg" isLazy={true} />
 				</div>
 
+				<!-- <div class="my-4">
+					<Image dataSrc="/wildtype/wildtype-website-bages.jpeg" isLazy={true} width="half" />
+				</div> -->
+
+				<div class="flex my-4">
+					<div class="px-2 w-1/2">
+						<Video
+							width="half"
+							src="https://player.vimeo.com/external/641907863.hd.mp4?s=6b42df0c1ea9089479c991bb11227f3c4e850abc&profile_id=175"
+						/>
+					</div>
+					<div class="px-2 w-1/2">
+						<Image dataSrc="/wildtype/wildtype-website-bages.jpeg" isLazy={true} width="half" />
+					</div>
+				</div>
+
 				<div class="my-4">
 					<Image dataSrc="/FPO-03.jpeg" isLazy={true} />
 				</div>
 
 				<div class="my-4">
 					<Video
-						src="https://player.vimeo.com/external/641535658.hd.mp4?s=405546a4f2fe0970c4b4c6f421d7282ee9d2a6dd&profile_id=175"
+						src="https://player.vimeo.com/external/641745517.hd.mp4?s=9cd2fd046c91b9f7d5ecbc847eba647d4354d414&profile_id=175"
 					/>
 				</div>
 
 				<div class="my-4">
 					<Image dataSrc="/FPO-02.jpeg" isLazy={true} />
+				</div>
+
+				<div class="my-4">
+					<Video
+						src="https://player.vimeo.com/external/641535658.hd.mp4?s=405546a4f2fe0970c4b4c6f421d7282ee9d2a6dd&profile_id=175"
+					/>
 				</div>
 
 				<div class="my-4">

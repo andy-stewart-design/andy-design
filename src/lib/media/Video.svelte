@@ -4,6 +4,7 @@
 	export let autoplay = 'true';
 	export let loop = 'true';
 	export let muted = 'true';
+	export let width = 'full';
 	let video;
 
 	onMount(() => {
@@ -11,16 +12,16 @@
 	});
 </script>
 
-<div class="w-full">
-	<div class="relative w-full pt-9/16">
+<div>
+	<div class:square={width === 'half'} class:film={width === 'full'} class="relative w-full">
 		<video
-			class="lazy-media absolute top-0 left-0 w-full h-full object-cover"
+			bind:this={video}
 			{autoplay}
 			{loop}
 			{muted}
+			class="lazy-media absolute top-0 left-0 w-full h-full object-cover"
 			src=""
 			data-src={src}
-			bind:this={video}
 			on:click={video.play()}
 		>
 			<track kind="captions" />
@@ -28,3 +29,12 @@
 		</video>
 	</div>
 </div>
+
+<style>
+	.square {
+		padding-top: 100%;
+	}
+	.film {
+		padding-top: 56.25%;
+	}
+</style>
