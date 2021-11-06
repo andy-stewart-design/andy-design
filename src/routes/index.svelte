@@ -14,26 +14,28 @@
 </svelte:head>
 
 <PgTransPrimary let:isLoaded>
-	<HeroProject {isLoaded} src="/FPO-01.jpeg" />
-	<IntersectionOberver>
-		<main class="bg-white">
-			<div class="p-6">
-				<div class="my-4 px-2">
-					<Image dataSrc="/FPO-02.jpeg" isLazy={true} />
-				</div>
+	<div>
+		<HeroProject {isLoaded} src="/FPO-01.jpeg" />
+		<IntersectionOberver>
+			<main class="bg-white">
+				<div class="p-6">
+					<div class="my-4 px-2">
+						<Image dataSrc="/FPO-02.jpeg" isLazy={true} />
+					</div>
 
-				<div class="my-4 px-2">
-					<Image dataSrc="/FPO-03.jpeg" isLazy={true} />
-				</div>
+					<div class="my-4 px-2">
+						<Image dataSrc="/FPO-03.jpeg" isLazy={true} />
+					</div>
 
-				<div class="my-4 px-2">
-					<Image dataSrc="/FPO-04.jpeg" isLazy={true} />
-				</div>
+					<div class="my-4 px-2">
+						<Image dataSrc="/FPO-04.jpeg" isLazy={true} />
+					</div>
 
-				<div class="my-4 px-2">
-					<Image dataSrc="/FPO-05.jpeg" isLazy={true} />
+					<div class="my-4 px-2">
+						<Image dataSrc="/FPO-05.jpeg" isLazy={true} />
+					</div>
 				</div>
-			</div>
-		</main>
-	</IntersectionOberver>
+			</main>
+		</IntersectionOberver>
+	</div>
 </PgTransPrimary>
