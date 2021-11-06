@@ -17,7 +17,7 @@
 	<HeroProject {isLoaded} src="/FPO-01.jpeg" />
 	<IntersectionOberver>
 		<main class="bg-white">
-			<div class="p-8">
+			<div class="p-6">
 				<div class="my-4 px-2">
 					<Image dataSrc="/FPO-02.jpeg" isLazy={true} />
 				</div>

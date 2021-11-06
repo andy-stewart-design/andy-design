@@ -19,7 +19,7 @@
 	<HeroProject {isLoaded} src="/FPO-05.jpeg" />
 	<IntersectionOberver>
 		<main class="bg-white">
-			<div class="p-8">
+			<div class="p-6">
 				<div class="my-4 px-2">
 					<Video
 						src="https://player.vimeo.com/external/641529594.hd.mp4?s=098261326121d8b78a2e1ed27042eead40934e93&profile_id=175"

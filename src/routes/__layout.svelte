@@ -25,3 +25,16 @@
 <div class="bg-black">
 	<slot />
 </div>
+
+<style>
+	@font-face {
+		font-family: 'JetBrains Mono';
+		font-style: normal;
+		font-weight: 400;
+		src: url('/JetBrainsMono-Medium.woff2') format('woff2');
+	}
+
+	:global(a) {
+		font-family: 'JetBrains Mono';
+	}
+</style>
