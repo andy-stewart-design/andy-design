@@ -19,7 +19,7 @@
 	<HeroProject {isLoaded} src="/FPO-05.jpeg" />
 	<IntersectionOberver>
 		<main class="bg-white">
-			<div class="p-6">
+			<div class="p-2 md:p-6">
 				<div class="my-4 px-2">
 					<Video
 						src="https://player.vimeo.com/external/641529594.hd.mp4?s=098261326121d8b78a2e1ed27042eead40934e93&profile_id=175"
@@ -30,14 +30,14 @@
 					<Image dataSrc="/FPO-04.jpeg" isLazy={true} />
 				</div>
 
-				<div class="flex my-4">
-					<div class="px-2 w-1/2">
+				<div class="flex flex-wrap my-4">
+					<div class="px-2 w-full mb-4 md:w-1/2 md:mb-0">
 						<Video
 							width="half"
 							src="https://player.vimeo.com/external/641907863.hd.mp4?s=6b42df0c1ea9089479c991bb11227f3c4e850abc&profile_id=175"
 						/>
 					</div>
-					<div class="px-2 w-1/2">
+					<div class="px-2 w-full md:w-1/2">
 						<Image dataSrc="/wildtype/wildtype-website-bages.jpeg" isLazy={true} width="half" />
 					</div>
 				</div>

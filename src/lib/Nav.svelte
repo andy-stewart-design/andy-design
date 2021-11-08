@@ -3,7 +3,9 @@
 	import AndyMark from '$lib/SVG/AndyMark.svelte';
 </script>
 
-<nav class="flex justify-between fixed top-0 left-0 w-full py-4 px-8 z-30 mix-blend-difference">
+<nav
+	class="flex justify-between fixed top-0 left-0 w-full py-4 px-4 md:px-8 z-30 mix-blend-difference"
+>
 	<a href="/">
 		<AndyMark />
 	</a>
