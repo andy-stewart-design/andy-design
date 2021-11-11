@@ -5,7 +5,6 @@
 	let isModalActive = false;
 	let toggleModal = function () {
 		isModalActive = !isModalActive;
-		console.log(isModalActive);
 	};
 </script>
 
