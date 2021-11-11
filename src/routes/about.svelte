@@ -41,7 +41,7 @@
 		src="/FPO-05.jpeg"
 	/>
 	<IntersectionOberver>
-		<main class="bg-white">
+		<main class="relative bg-white">
 			<div class="p-2 md:p-6">
 				<div class="my-4 px-2">
 					<Video

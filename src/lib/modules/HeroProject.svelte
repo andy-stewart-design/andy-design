@@ -13,7 +13,7 @@
 
 <div class="relative block bg-black">
 	<div>
-		<div class="sticky top-0 left-0 w-screen h-screen overflow-hidden">
+		<div class="fixed top-0 left-0 w-screen h-screen overflow-hidden z-0">
 			<img
 				class:isLoaded
 				class="w-screen h-full object-cover scale-150 opacity-50 transition-transform duration-1000 delay-1000 ease-out"
@@ -21,7 +21,7 @@
 				{alt}
 			/>
 		</div>
-		<div class="flex items-end w-full md:h-screen -mt-28 md:-mt-screen px-2 py-4 md:px-6 md:py-8">
+		<div class="relative flex items-end w-full md:h-screen px-2 py-4 md:px-6 md:py-8">
 			<div class="flex flex-wrap w-full">
 				<div class="w-full md:w-1/3 h-28 md:h-auto pl-2 pr-8 mb-8 md:mb-0">
 					<h1 class="relative text-3xl text-white">{headline}</h1>
