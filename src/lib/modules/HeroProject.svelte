@@ -3,21 +3,12 @@
 	export let alt = "andy's image";
 	export let isLoaded = false;
 
-	export let headline = 'Promoting the Future of Seafood';
-	export let services = [
-		'Visual Design',
-		'Prototyping',
-		'Illustration',
-		'Animation',
-		'Creative Coding',
-		'UX / IA / QA'
-	];
-	export let specs = [
-		'Client: Glaze',
-		'Industry: Food & Beverage',
-		'Year: 2021',
-		'Deliverable: Website'
-	];
+	export let headline = '';
+	export let services = [];
+	export let specs = [];
+	export let objective = '';
+	export let approach = '';
+	export let solution = '';
 </script>
 
 <div class="relative block bg-black">
@@ -64,14 +55,7 @@
 				</div>
 				<div class="pl-4 pt-1 md:p-0">
 					<h3 class="text-base text-white mb-4">Objective</h3>
-					<p class="text-white">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-						exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-						dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-						mollit anim id est laborum.
-					</p>
+					<p class="text-white">{objective}</p>
 				</div>
 			</div>
 			<div class="flex flex-row md:flex-col w-full md:w-1/3 pl-2 pr-8 mb-8 md:mb-0">
@@ -84,14 +68,7 @@
 				</div>
 				<div class="pl-4 pt-1 md:p-0">
 					<h3 class="text-base text-white mb-4">Approach</h3>
-					<p class="text-white">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-						exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-						dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-						mollit anim id est laborum.
-					</p>
+					<p class="text-white">{approach}</p>
 				</div>
 			</div>
 			<div class="flex flex-row md:flex-col w-full md:w-1/3 pl-2 pr-8 mb-8 md:mb-0">
@@ -104,14 +81,7 @@
 				</div>
 				<div class="pl-4 pt-1 md:p-0">
 					<h3 class="text-base text-white mb-4">Solution</h3>
-					<p class="text-white">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-						exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-						dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-						mollit anim id est laborum.
-					</p>
+					<p class="text-white">{solution}</p>
 				</div>
 			</div>
 		</div>

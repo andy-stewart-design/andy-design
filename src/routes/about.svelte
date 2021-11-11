@@ -4,6 +4,20 @@
 	import HeroProject from '$lib/modules/HeroProject.svelte';
 	import Video from '$lib/media/Video.svelte';
 	import Image from '$lib/media/Image.svelte';
+
+	let headline = 'Promoting the Future of Seafood';
+	let services = [
+		'Visual Design',
+		'Prototyping',
+		'Illustration',
+		'Animation',
+		'Creative Coding',
+		'UX / IA / QA'
+	];
+	let specs = ['Client: Glaze', 'Industry: Food & Beverage', 'Year: 2021', 'Deliverable: Website'];
+	let objective = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`;
+	let approach = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`;
+	let solution = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`;
 </script>
 
 <svelte:head>
@@ -16,7 +30,16 @@
 </svelte:head>
 
 <PgTransPrimary let:isLoaded>
-	<HeroProject {isLoaded} src="/FPO-05.jpeg" />
+	<HeroProject
+		{isLoaded}
+		{headline}
+		{services}
+		{specs}
+		{objective}
+		{approach}
+		{solution}
+		src="/FPO-05.jpeg"
+	/>
 	<IntersectionOberver>
 		<main class="bg-white">
 			<div class="p-2 md:p-6">
