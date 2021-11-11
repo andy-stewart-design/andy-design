@@ -6,35 +6,32 @@
 	let toggleModal = function () {
 		isModalActive = !isModalActive;
 	};
+
+	let navLinks = [
+		{ name: 'Home', link: '/' },
+		{ name: 'About', link: '/about' }
+	];
 </script>
 
 <a class="fixed top-8 left-4 md:left-8 w-10 h-10 z-30 mix-blend-difference" href="/">
-	<AndyMark />
+	<AndyMark dark={true} />
 </a>
 
 <div
-	class="fixed top-0 left-0 w-screen h-screen p-8 bg-black z-30 transform translate-x-full transition-transform duration-700"
+	class="fixed top-0 right-0 w-96 h-screen p-8 bg-white bg-opacity-75 backdrop-blur shadow-lg z-30 transform translate-x-full transition-transform duration-700"
 	class:modalOpen={isModalActive}
 >
 	<nav class="flex flex-col items-start">
-		<button on:click={toggleModal} class="mb-2">
+		{#each navLinks as navLink}
 			<a
 				sveltekit:prefetch
-				href="/"
-				class:current={activeLink === '/'}
-				class="text-white text-3xl opacity-60 hover:opacity-100 transition-opacity duration-500 py-2"
-				>Home
+				href={navLink.link}
+				class:current={activeLink === navLink.link}
+				class="w-full text-black text-xl opacity-60 hover:opacity-100 transition-opacity duration-500 pt-2 mb-2"
+			>
+				<button on:click={toggleModal} class="flex items-start w-full mb-2">{navLink.name}</button>
 			</a>
-		</button>
-		<button on:click={toggleModal}>
-			<a
-				sveltekit:prefetch
-				href="/about"
-				class:current={activeLink === '/about'}
-				class="text-white text-3xl opacity-60 hover:opacity-100 transition-opacity duration-500 py-2"
-				>About
-			</a>
-		</button>
+		{/each}
 	</nav>
 </div>
 
